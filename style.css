@@ -1,0 +1,144 @@
+/* ===== RESET & BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #3b5bdb;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ===== SECTION MESSAGES ===== */
+#messages {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#messages h2 {
+  margin-bottom: 15px;
+  color: #3b5bdb;
+}
+
+#liste-messages {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#liste-messages li {
+  background: #e8edf8;
+  border-left: 4px solid #3b5bdb;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* ===== SECTION POSTER ===== */
+#poster {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#poster h2 {
+  color: #3b5bdb;
+  margin-bottom: 5px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#btn-envoyer {
+  background-color: #3b5bdb;
+  color: white;
+}
+
+#btn-envoyer:hover {
+  background-color: #2f4ac0;
+}
+
+#btn-theme {
+  background-color: #e0e0e0;
+  color: #333;
+  width: fit-content;
+}
+
+/* ===== MODE SOMBRE ===== */
+body.dark {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+body.dark header {
+  background-color: #16213e;
+}
+
+body.dark #messages,
+body.dark #poster {
+  background-color: #16213e;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+body.dark #liste-messages li {
+  background-color: #0f3460;
+  border-left-color: #e94560;
+}
+
+body.dark input[type="text"],
+body.dark textarea {
+  background-color: #0f3460;
+  color: #e0e0e0;
+  border-color: #444;
+}

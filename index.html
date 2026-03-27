@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Forum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>💬 Mini Forum — Partagez vos messages</h1>
+  </header>
+
+  <main>
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul id="liste-messages"></ul>
+    </section>
+
+    <section id="poster">
+      <h2>Poster un message</h2>
+      <label for="pseudo">Votre pseudo :</label>
+      <input type="text" id="pseudo" placeholder="Votre pseudo">
+
+      <label for="nouveau-message">Votre message :</label>
+      <textarea id="nouveau-message" placeholder="Écrivez votre message ici..."></textarea>
+
+      <button id="btn-envoyer">Envoyer</button>
+      <button id="btn-theme">🌙 Mode sombre</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
