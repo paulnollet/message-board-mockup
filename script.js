@@ -1,5 +1,4 @@
-// ⚠️ Remplace cette URL par celle de TON serveur Replit
-const SERVER_URL = "https://e7be418a-da30-4cba-83fb-b47b872e267c-00-13jeycg6absvk.worf.replit.dev";
+const SERVER_URL = "https://message-board-server-7h9t.onrender.com";
 
 // ===== Charger les messages au démarrage =====
 function chargerMessages() {
